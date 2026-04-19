@@ -68,17 +68,17 @@ class Tamagotchi:
         self.felicidad = min(100, self.felicidad + 10)
         self.salud = max(0, self.salud - 5)
         self.energia = max(0, self.energia - 10)
-        print(f"{self.nombre} jugó! 🎮 Felicidad: {self.felicidad} | Salud: {self.salud} | Energía: {self.energia}")
+        print(f"{self.nombre} jugó! - Felicidad: {self.felicidad} | Salud: {self.salud} | Energía: {self.energia}")
 
     def comer(self):
         self.felicidad = min(100, self.felicidad + 5)
         self.salud = min(100, self.salud + 10)
-        print(f"{self.nombre} comió! 🍎 Felicidad: {self.felicidad} | Salud: {self.salud}")
+        print(f"{self.nombre} comió! - Felicidad: {self.felicidad} | Salud: {self.salud}")
 
     def curar(self):
         self.salud = min(100, self.salud + 20)
         self.felicidad = max(0, self.felicidad - 5)
-        print(f"{self.nombre} fue curado! 💊 Salud: {self.salud} | Felicidad: {self.felicidad}")
+        print(f"{self.nombre} fue curado! - Salud: {self.salud} | Felicidad: {self.felicidad}")
 
 
 class Persona:

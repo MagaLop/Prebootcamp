@@ -1,0 +1,9 @@
+from tamagotchi import Tamagotchi
+from persona import Persona
+
+tama = Tamagotchi("Tama", "Rojo")
+persona = Persona("Juan", "Perez", tama)
+
+persona.darle_comida()
+persona.curarlo()
+persona.jugar_con_tamagotchi()
